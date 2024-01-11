@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.c1{
+    width:100px;
+    height:100px;
+    color:white;
+    transition-timing-function: ease-in;
+    background-color:blueviolet;
+    transition-delay: 1s;
+    margin-left: 150px;
+    text-align:center;
+line-height: 75px;
+
+
+} 
+.c1:hover{
+width:250px;
+height:200px;
+background-color:pink;
+transition-timing-function: ease-out;
+line-height: 150px;
+color:black;
+
+} 
+.c2{
+width:100px;
+height:100px;
+background-color:black;
+color:white;
+transition:width 2s, height2s,transform 1s, transition-duration 5s;
+text-align:center;
+line-height: 75px;
+
+
+} 
+.c2:hover{
+transform:rotate(360deg);
+transition:transform 5s;
+
+}
+#i1{
+    width:100px;
+    height: 100px;
+    background-color: aqua;
+    transform:skew(20deg);
+    margin-left:150px;
+    text-align:center;
+line-height: 75px;
+
+}
+#i1:hover{
+    transform:skew(120deg);
+    
+}
+#i2{
+    width:100px;
+    height: 100px;
+    background-color: greenyellow;
+text-align: center;
+text-align:center;
+line-height: 75px;
+
+}
+#i2:hover{
+    transform: scale(1,2);
+
+}
+</style>
+
+<body>
+
+  <div class="c1">transition</div> 
+   <div class="c2">2d transforms</div>
+   <div id="i1">skew</div>
+   <div id="i2">scale</div>
+   
+</body>
+</html>
